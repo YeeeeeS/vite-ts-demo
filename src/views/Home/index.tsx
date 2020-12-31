@@ -6,7 +6,8 @@ export default defineComponent({
   setup() {
     
     const store = useStore();
-    console.log(store);
+    store.dispatch('userAction', { name: 'Lisa' })
+    console.log(store.getters.userInfo);
 
     return () => (
       <div>

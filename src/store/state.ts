@@ -1,8 +1,13 @@
-
+interface userType {
+  name?: string,
+  avatar?: string
+}
 export interface State {
-  userInfo: Object
+  title: string,
+  userInfo: userType
 }
 
 export const state: State = {
+  title: 'Vite',
   userInfo: {}
 }
